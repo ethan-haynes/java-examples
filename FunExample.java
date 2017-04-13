@@ -10,7 +10,7 @@ class FunExample {
 
     /* This is an example of an iife with a return value in java */
     System.out.println(
-      ((Function<Integer,Void>) y ->
+      ((Function<Integer,Integer>) y ->
         y + y
       ).apply(2)
     );
