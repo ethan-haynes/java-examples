@@ -43,7 +43,10 @@ class FunExample {
       put("Cat",1);
       put("Dog",2);
     }};
-    System.out.println(dic.get("Cat"));
+    System.out.println(
+      dic.entrySet().stream().map(Map.Entry::getKey)
+         .reduce("", (a,b) -> a + b)
+    );
 
     testDictionary(
       new HashMap<String, Integer>() {{
