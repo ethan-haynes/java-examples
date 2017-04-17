@@ -35,6 +35,12 @@ class LambdaBuilderExample {
       .model("Camaro")
       .year(1968);
 
+    Car mustang = car()
+      .make("Ford")
+      .model("Mustang")
+      .year(1965);
+
     System.out.println(camaro);
+    System.out.println(mustang);
   }
 }
