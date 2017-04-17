@@ -38,11 +38,10 @@ class FunExample {
     String[] s = {"1","2","3","4","5","6","7"};
     Arrays.stream(s).forEach(System.out::println);
 
-
     Map<String, Integer> dic = new HashMap() {{
       put("Cat",1);
       put("Dog",2);
-    }};
+    }};    
     System.out.println(
       dic.entrySet().stream().map(Map.Entry::getKey)
          .reduce("", (a,b) -> a + b)
